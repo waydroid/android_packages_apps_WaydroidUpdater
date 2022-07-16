@@ -1,0 +1,5 @@
+<permissions>
+    <privapp-permissions package="org.lineageos.waydroidupdater">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+    </privapp-permissions>
+</permissions>

@@ -1,0 +1,26 @@
+// Copyright (C) 2022 The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+
+android_app {
+    name: "WaydroidUpdater",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    platform_apis: true,
+    certificate: "platform",
+    privileged: true,
+    manifest: "AndroidManifest.xml",
+
+    static_libs: [
+        "androidx.cardview_cardview",
+        "org.lineageos.platform.internal",
+    ],
+
+    overrides: ["Updater"],
+    required: ["privapp_whitelist_org.lineageos.waydroidupdater.xml"],
+}
+
+prebuilt_etc {
+    name: "privapp_whitelist_org.lineageos.waydroidupdater.xml",
+    src: "privapp_whitelist_org.lineageos.waydroidupdater.xml",
+    sub_dir: "permissions",
+}

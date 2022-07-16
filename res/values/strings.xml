@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2022 The LineageOS Project
+    SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Waydroid Updater</string>
+    <string name="notification_channel_name">System Updates</string>
+    <string name="notification_channel_description">Notifies when a system update is available</string>
+    <string name="notification_title">System update available</string>
+    <string name="notification_text">A new android update is available. Tap me for more details.</string>
+
+    <string name="download_failed_text">Failed to download the update.</string>
+    <string name="download_button_text">Download</string>
+    <string name="update_button_text">Restart Waydroid now</string>
+
+    <string name="card_image_text"><xliff:g name="name">%s</xliff:g> image</string>
+    <string name="card_image_status_unknown">Unknown</string>
+    <string name="card_image_status_up_to_date">Up to date</string>
+    <string name="card_image_status_yours">Yours:\u00A0Version\u00A0<xliff:g name="version">%1$s</xliff:g> (<xliff:g name="date">%2$s</xliff:g>)</string>
+    <string name="card_image_status_latest">Latest:\u00A0Version\u00A0<xliff:g name="version">%1$s</xliff:g> (<xliff:g name="date">%2$s</xliff:g>)</string>
+</resources>
