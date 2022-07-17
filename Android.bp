@@ -6,6 +6,7 @@ android_app {
     srcs: ["src/**/*.java"],
     resource_dirs: ["res"],
     platform_apis: true,
+    system_ext_specific: true,
     certificate: "platform",
     privileged: true,
     manifest: "AndroidManifest.xml",
@@ -21,6 +22,7 @@ android_app {
 
 prebuilt_etc {
     name: "privapp_whitelist_org.lineageos.waydroidupdater.xml",
+    system_ext_specific: true,
     src: "privapp_whitelist_org.lineageos.waydroidupdater.xml",
     sub_dir: "permissions",
 }
