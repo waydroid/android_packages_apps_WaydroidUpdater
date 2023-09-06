@@ -74,12 +74,11 @@ public class UpdateActivity extends Activity {
 
         mUpdateBtn = findViewById(R.id.update_btn);
         mUpdateBtn.setOnClickListener(v -> {
-            //TODO: 64 bit timestamps
             mWaydroidHardware.upgrade(
                     mCanUpdateSystem ? mSystemDownloader.getHostPath() : "",
-                    mCanUpdateSystem ? (int)(mSystemUpdate.getTimestamp()/1000) : 0,
+                    mCanUpdateSystem ? (mSystemUpdate.getTimestamp()/1000) : 0,
                     mCanUpdateVendor ? mVendorDownloader.getHostPath() : "",
-                    mCanUpdateVendor ? (int)(mVendorUpdate.getTimestamp()/1000) : 0);
+                    mCanUpdateVendor ? (mVendorUpdate.getTimestamp()/1000) : 0);
         });
 
         onUpdates(getIntent().getParcelableExtra(UpdaterTools.INTENT_EXTRA_SYSTEM_UPDATEINFO),
