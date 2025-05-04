@@ -65,9 +65,12 @@ public class UpdateInfo implements Comparable<UpdateInfo>, Parcelable {
     }
 
     public int compareTo(String version, long datetime) {
-        Version a = new Version(this.version + "." + this.datetime);
-        Version b = new Version(version + "." + datetime);
-        return a.compareTo(b);
+        Version thisVersion = new Version(this.version);
+        Version otherVersion = new Version(version);
+        int cmp = thisVersion.compareTo(otherVersion);
+        if (cmp == 0)
+            return Long.signum(this.datetime - datetime);
+        return cmp;
     }
 
     // Comparable<> implementation
