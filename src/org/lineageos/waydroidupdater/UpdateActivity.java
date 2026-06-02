@@ -32,7 +32,7 @@ import java.util.List;
 
 import org.lineageos.waydroidupdater.download.UpdateDownloadController;
 import org.lineageos.waydroidupdater.download.DownloadClient;
-import lineageos.waydroid.Hardware;
+import id.waydro.waydroid.Hardware;
 
 import static android.os.Build.Partition.PARTITION_NAME_SYSTEM;
 
