@@ -13,7 +13,7 @@ android_app {
 
     static_libs: [
         "androidx.cardview_cardview",
-        "org.lineageos.platform.internal",
+        "framework-waydroid.static",
     ],
 
     overrides: ["Updater"],
